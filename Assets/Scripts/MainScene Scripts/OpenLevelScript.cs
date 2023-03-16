@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class OpenLevelScript : MonoBehaviour
 {
+    [SerializeField]
+    GameScript gameScript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +23,7 @@ public class OpenLevelScript : MonoBehaviour
 
     public void OnClick()
     {
-        var levelNumber = "1";
+        var levelNumber = gameScript.currentLevel;
 
         var level = SceneManager.GetActiveScene()
             .GetRootGameObjects()
