@@ -33,7 +33,6 @@ public class OpenTowerMenuScript : MonoBehaviour
             .FirstOrDefault(x => x.name == "TowerPlaceForPoint");
     }
 
-
     public void OpenTowerMenu()
     {
         while (menuContainer.childCount > 0)
@@ -43,14 +42,15 @@ public class OpenTowerMenuScript : MonoBehaviour
 
         var menu = Instantiate(menuPrefab, menuContainer);
 
+        menu.position = menuPosition;
+
+        // getting each menu item's script and setting this script as a parameter
 
         var menuItemsScripts = menu.GetComponentsInChildren<SelectTowerFromMenuScript>();
 
-        foreach( var item in menuItemsScripts )
+        foreach (var item in menuItemsScripts)
         {
             item.openTowerMenuScript = this;
         }
-
-        menu.position = menuPosition;
     }
 }

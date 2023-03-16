@@ -24,18 +24,13 @@ public class SelectTowerFromMenuScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
 
+    }
 
     public void ChooseTower()
     {
         towerPrefabTransform.GetComponent<Image>().sprite = GetComponent<Image>().sprite;
 
-
         Instantiate(towerPrefabTransform, openTowerMenuScript.towerPlaceForPoint);
-
-
-        openTowerMenuScript.gameObject.SetActive(false);
     }
 }

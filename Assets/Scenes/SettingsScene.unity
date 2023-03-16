@@ -1384,7 +1384,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 574c82239ac852149af05dd40fc0bcaf, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -1464,7 +1464,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 574c82239ac852149af05dd40fc0bcaf, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -1658,7 +1658,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 574c82239ac852149af05dd40fc0bcaf, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -1763,8 +1763,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 478911337}
   m_TextComponent: {fileID: 777263264}
   m_Placeholder: {fileID: 369961267}
-  m_ContentType: 0
-  m_InputType: 0
+  m_ContentType: 7
+  m_InputType: 2
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
@@ -2753,7 +2753,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 574c82239ac852149af05dd40fc0bcaf, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -3237,6 +3237,7 @@ GameObject:
   - component: {fileID: 872339595}
   - component: {fileID: 872339594}
   - component: {fileID: 872339593}
+  - component: {fileID: 872339596}
   m_Layer: 5
   m_Name: AuthorizeButton
   m_TagString: Untagged
@@ -3308,7 +3309,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 872339594}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 872339596}
+        m_TargetAssemblyTypeName: AuthorizationScript, Assembly-CSharp
+        m_MethodName: Authorize
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &872339594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3347,6 +3360,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872339591}
   m_CullTransparentMesh: 1
+--- !u!114 &872339596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872339591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3461f88d15f29eb42ae0fefd20466f4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  email: {fileID: 2127090994}
+  password: {fileID: 777263264}
 --- !u!1 &908671618
 GameObject:
   m_ObjectHideFlags: 0
@@ -3482,7 +3509,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 574c82239ac852149af05dd40fc0bcaf, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -3562,7 +3589,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 574c82239ac852149af05dd40fc0bcaf, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -3995,8 +4022,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1095341712}
   m_TextComponent: {fileID: 917201634}
   m_Placeholder: {fileID: 1229969433}
-  m_ContentType: 0
-  m_InputType: 0
+  m_ContentType: 7
+  m_InputType: 2
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
@@ -4824,7 +4851,7 @@ GameObject:
   - component: {fileID: 1191109305}
   - component: {fileID: 1191109304}
   m_Layer: 5
-  m_Name: CloseSettingsBtn
+  m_Name: CloseBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5003,7 +5030,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 574c82239ac852149af05dd40fc0bcaf, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -5384,7 +5411,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 574c82239ac852149af05dd40fc0bcaf, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -5396,7 +5423,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0412\u043E\u0439\u0442\u0438"
+  m_Text: Authorize
 --- !u!222 &1293595007
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5502,7 +5529,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 574c82239ac852149af05dd40fc0bcaf, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -6265,7 +6292,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 574c82239ac852149af05dd40fc0bcaf, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -6744,7 +6771,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 574c82239ac852149af05dd40fc0bcaf, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -7428,7 +7455,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 574c82239ac852149af05dd40fc0bcaf, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -7461,6 +7488,7 @@ GameObject:
   - component: {fileID: 1950600685}
   - component: {fileID: 1950600684}
   - component: {fileID: 1950600683}
+  - component: {fileID: 1950600686}
   m_Layer: 5
   m_Name: CreateButton
   m_TagString: Untagged
@@ -7531,7 +7559,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1950600684}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1950600686}
+        m_TargetAssemblyTypeName: RegistrationScript, Assembly-CSharp
+        m_MethodName: RegistrateUser
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1950600684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7570,6 +7610,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950600681}
   m_CullTransparentMesh: 1
+--- !u!114 &1950600686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950600681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88eabf72a506b9c40960fd0a397edf43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  registrationAnimator: {fileID: 1997823158}
+  firstnameText: {fileID: 377627601}
+  lastnameText: {fileID: 1337593564}
+  email: {fileID: 474471576}
+  password: {fileID: 917201634}
 --- !u!1 &1959468676
 GameObject:
   m_ObjectHideFlags: 0
@@ -8212,7 +8269,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 574c82239ac852149af05dd40fc0bcaf, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
