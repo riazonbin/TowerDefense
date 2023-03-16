@@ -3709,7 +3709,7 @@ RectTransform:
   m_Children:
   - {fileID: 1965898010}
   m_Father: {fileID: 1717910453}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7837,7 +7837,7 @@ RectTransform:
   m_Children:
   - {fileID: 739557035}
   m_Father: {fileID: 1717910453}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7887,7 +7887,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 962748342}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1258938032}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: AchievementsInteraction
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &962748342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10188,7 +10200,7 @@ RectTransform:
   m_Children:
   - {fileID: 813429265}
   m_Father: {fileID: 1717910453}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10238,7 +10250,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1196906116}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1465218390}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ShopInteraction
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1196906116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10657,6 +10681,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1258938031}
+  - component: {fileID: 1258938032}
   m_Layer: 5
   m_Name: AchievementsWindow
   m_TagString: Untagged
@@ -10688,6 +10713,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 1169}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1258938032
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258938030}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: abbc9030a30dec449878febe71b93dbd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1287236795
 GameObject:
   m_ObjectHideFlags: 0
@@ -11182,7 +11227,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1386704705}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1258938032}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: AchievementsInteraction
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1386704705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12162,6 +12219,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1465218389}
+  - component: {fileID: 1465218390}
   m_Layer: 5
   m_Name: ShopWindow
   m_TagString: Untagged
@@ -12192,6 +12250,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 1169.0001}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1465218390
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465218388}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 441e46aa44ac2c9499a3ae8c929fd204, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1470243374
 GameObject:
   m_ObjectHideFlags: 0
@@ -14319,7 +14397,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1675680364}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1465218390}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ShopInteraction
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1675680364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14626,9 +14716,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1644962459}
-  - {fileID: 962748340}
   - {fileID: 453226391}
   - {fileID: 1196906114}
+  - {fileID: 962748340}
   m_Father: {fileID: 415669302}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15291,7 +15381,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1802995133
 RectTransform:
   m_ObjectHideFlags: 0
