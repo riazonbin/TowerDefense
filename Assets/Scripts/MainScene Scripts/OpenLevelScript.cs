@@ -29,7 +29,7 @@ public class OpenLevelScript : MonoBehaviour
             .GetRootGameObjects()
             .FirstOrDefault(x => x.name == "Canvas")
             .GetComponentsInChildren<Transform>().FirstOrDefault(x => x.name == "Levels")
-            .GetComponentsInChildren<Transform>(true).FirstOrDefault(x => x.name.Contains(levelNumber));
+            .GetComponentsInChildren<Transform>(true).FirstOrDefault(x => x.name.Contains("Level " + levelNumber));
 
 
         level.gameObject.SetActive(true);
