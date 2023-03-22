@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1942900897856807143}
   - component: {fileID: 1942900897856807140}
   - component: {fileID: 1942900897856807141}
+  - component: {fileID: 7073809784706348005}
   m_Layer: 5
   m_Name: PauseButton
   m_TagString: Untagged
@@ -120,7 +121,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1942900897856807140}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7073809784706348005}
+        m_TargetAssemblyTypeName: PauseGameScript, Assembly-CSharp
+        m_MethodName: PauseGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7073809784706348005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942900897856807163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 431e625c86d04fb4cbf2f491d04b0bb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1942900898448236588
 GameObject:
   m_ObjectHideFlags: 0
