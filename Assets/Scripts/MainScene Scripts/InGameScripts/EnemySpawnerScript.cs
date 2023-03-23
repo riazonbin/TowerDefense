@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemySpawnerScript : MonoBehaviour
 {
     [SerializeField]
-    Transform enemyPrefab;
+    List<Transform> enemyPrefabs = new List<Transform>();
 
     [SerializeField]
     Transform spawnPoint;
@@ -22,6 +22,7 @@ public class EnemySpawnerScript : MonoBehaviour
 
     public IEnumerator Spawn()
     {
+        var enemyPrefab = enemyPrefabs[Random.Range(0, enemyPrefabs.Count)];
         var enemy = Instantiate(enemyPrefab, spawnPoint,  false);
         yield return new WaitForSeconds(2);
 
