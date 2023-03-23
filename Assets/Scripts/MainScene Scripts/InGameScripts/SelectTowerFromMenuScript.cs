@@ -30,6 +30,7 @@ public class SelectTowerFromMenuScript : MonoBehaviour
     public void ChooseTower()
     {
         towerPrefabTransform.GetComponent<Image>().sprite = GetComponent<Image>().sprite;
+        towerPrefabTransform.GetComponent<Image>().SetNativeSize();
 
         Instantiate(towerPrefabTransform, openTowerMenuScript.towerPlaceForPoint);
     }

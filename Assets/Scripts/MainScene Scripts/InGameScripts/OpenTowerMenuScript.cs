@@ -10,13 +10,16 @@ public class OpenTowerMenuScript : MonoBehaviour
     [SerializeField]
     Transform menuPrefab;
 
+    [HideInInspector]
     Transform menuContainer;
-    Vector3 menuPosition;
 
-    [DoNotSerialize]
+    [SerializeField]
+    Transform menuPositionTransform;
+
+    [HideInInspector]
     public Vector3 dotPosition;
 
-    [DoNotSerialize]
+    [SerializeField]
     public Transform towerPlaceForPoint;
 
     private void Start()
@@ -26,11 +29,11 @@ public class OpenTowerMenuScript : MonoBehaviour
         menuContainer = transform.parent.parent.parent.GetComponentsInChildren<Transform>()
             .FirstOrDefault(x => x.name == "MenuContainer");
 
-        menuPosition = transform.parent.GetComponentsInChildren<Transform>()
-            .FirstOrDefault(x => x.name == "MenuPlaceForPoint").position;
+        //menuPosition = transform.parent.GetComponentsInChildren<Transform>()
+        //    .FirstOrDefault(x => x.name == "MenuPlaceForPoint").position;
 
-        towerPlaceForPoint = transform.parent.GetComponentsInChildren<Transform>()
-            .FirstOrDefault(x => x.name == "TowerPlaceForPoint");
+        //towerPlaceForPoint = transform.parent.GetComponentsInChildren<Transform>()
+        //    .FirstOrDefault(x => x.name == "TowerPlaceForPoint");
     }
 
     public void OpenTowerMenu()
@@ -42,7 +45,7 @@ public class OpenTowerMenuScript : MonoBehaviour
 
         var menu = Instantiate(menuPrefab, menuContainer);
 
-        menu.position = menuPosition;
+        menu.position = menuPositionTransform.position;
 
         // getting each menu item's script and setting this script as a parameter
 
