@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3845969137591091071}
-  - component: {fileID: 3845969137591091070}
   - component: {fileID: -2115467163312888046}
-  - component: {fileID: 7218964975795491189}
+  - component: {fileID: 3845969137591091070}
+  - component: {fileID: 4709208391847350504}
   m_Layer: 0
   m_Name: OrcPrefab
   m_TagString: Untagged
@@ -34,6 +34,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-2115467163312888046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3845969137591091064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad8a1483a756cb42b3ea38891494f9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wayPointsList: []
 --- !u!212 &3845969137591091070
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -86,20 +99,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-2115467163312888046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3845969137591091064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bad8a1483a756cb42b3ea38891494f9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wayPointsList: []
---- !u!95 &7218964975795491189
+--- !u!95 &4709208391847350504
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0
