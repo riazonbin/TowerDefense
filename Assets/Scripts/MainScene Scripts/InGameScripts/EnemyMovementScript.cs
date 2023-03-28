@@ -36,10 +36,17 @@ public class EnemyMovementScript : MonoBehaviour
 
         transform.position = Vector3.MoveTowards(transform.position, _target, 4 * Time.deltaTime);
 
-        if (_index + 2 > wayPointsList.Count)
+        if (_index == wayPointsList.Count - 1)
         {
+            if(transform.position == _target)
+            {
+                Destroy(gameObject);
+                return;
+            }
             return;
         }
+
+
         if (transform.position == _target)
         {
             _index++;
