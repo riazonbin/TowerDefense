@@ -32,9 +32,13 @@ public class OpenLevelScript : MonoBehaviour
             .GetComponentsInChildren<Transform>().FirstOrDefault(x => x.name == "Levels")
             .GetComponentsInChildren<Transform>(true).FirstOrDefault(x => x.name.Contains("Level " + levelNumber));
 
+
         try
         {
             level.gameObject.SetActive(true);
+
+            //var menuBlock = level.parent.parent.GetComponentsInChildren<Transform>(true).FirstOrDefault(x => x.name == "UI Block");
+            //menuBlock.gameObject.SetActive(true);
         }
         catch { }
     }
