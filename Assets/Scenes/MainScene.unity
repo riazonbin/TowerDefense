@@ -16530,6 +16530,7 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 3042791029472508108, guid: 7fa8e42bfec3cdf40a4e1d91eae181ea, type: 3}
   - {fileID: 3845969137591091071, guid: ca536549ddd82ba4888b851106af17db, type: 3}
+  - {fileID: 6624406656730174412, guid: fcb10d3c7c55a1143a906e8909be1e19, type: 3}
   spawnPoint: {fileID: 1641952288}
   maxEnemiesOnWage: 15
   maxEnemiesOnDisplay: 5
@@ -19167,7 +19168,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1919293213
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21377,7 +21378,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8484375454688917035, guid: 1c1345b1c3c45be4e98163a4ab3c78d0, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 86.9725
+      value: 86.972534
       objectReference: {fileID: 0}
     - target: {fileID: 8484375454688917035, guid: 1c1345b1c3c45be4e98163a4ab3c78d0, type: 3}
       propertyPath: m_AnchoredPosition.y

@@ -45,7 +45,7 @@ public class EnemyMovementScript : MonoBehaviour
     {
         GetComponent<SpriteRenderer>().flipX = transform.position.x - _target.x >= 0;
 
-        transform.position = Vector3.MoveTowards(transform.position, _target, 5 * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, _target, 3 * Time.deltaTime);
 
         if (_index == wayPointsList.Count - 1)
         {
